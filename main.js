@@ -373,7 +373,7 @@ async function buscar() {
       // Poke Abilities
       let abilitiesPoke = []
 
-      //Advantage and Disadvantage 
+      //Advantage and Disadvantage
       let advantage = []
       let disadvantage = []
       //Change SRC IMG with PokeName
