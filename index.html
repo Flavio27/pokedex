@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./img/pokedex.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex alpha v.1.0</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="modal" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body container backgroundModal">
+                    <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                    <div class="row">
+                        <div id="evo1" class="col-sm-12">
+                            <div id="firstEvo">
+                                <div id="first" class="picSpaceBottom smallerText"></div>
+                                <p id="arrowFirst" class="arrow">↓</p>
+                            </div>
+                        </div>
+
+                        <div id="evo2" class="col-sm-12">
+                            <div id="secondEvo">
+                                <div id="second" class="picSpaceBottom row smallerText"></div>
+                                <p id="arrowSecond" class="arrow">↓</p>
+                            </div>
+                        </div>
+                        <div id="evo3" class="col-sm-12">
+                            <div id="thirdEvo">
+                                <div id="third" class="picSpaceBottom row smallerText"></div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div id="evoSpecial" class="col-sm-12">
+                            <div id="megaEvo">
+                                <div id="mega" class="picSpaceBottom row smallerText"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="main" class="pokedex container border border-secondary rounded">
+        <div id="search">
+            <input type="text" class="border border-secondary rounded" name="" id="nomePoke" placeholder="Pokémon Name"
+                style="display: show">
+            <button type="button" class="btn btn-dark btn-sm rounded-circle" onclick="buscar()">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z">
+                    </path>
+                    <path fill-rule="evenodd"
+                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z">
+                    </path>
+                </svg>
+            </button>
+
+
+        </div>
+
+
+        <div class="pokedey--body">
+            <div id="moreInfo" style="display: none;">
+                <button id="back" onclick="backInfo()" style="display: none;">◀</button>
+                <button id="next" onclick="nextInfo()">▶</button>
+            </div>
+            <div id="screen_one">
+
+                <span id="alertSearch"></span>
+                <br>
+                <span id="pokemonName"></span>
+                <br>
+                <span id="typePoke"></span>
+                <span id="elementIcon"></span>
+                <br>
+                <span id="typePokemon" class="typePokemon"></span>
+                <div id="fotoPoke"><br>
+                    <div class="background">
+                        <br>
+                        <img class="pokePic border border-secondary rounded-circle" id="PokePicture"
+                            src="./img/noPoke.png" alt="">
+
+                    </div>
+
+                </div><br>
+
+                <div id="info" style="display: none;">
+                    <div id="textPoke"></div>
+                    <hr>
+                    <span>- Abilities:</span>
+                    <div id="abilities"></div>
+                    <div id="height"></div>
+                    <div id="weight"></div>
+                    <div id="gender"></div>
+
+                    <br>
+                </div>
+            </div>
+            <div id="screen_two" style="display: none;">
+                <div style="display: none;">
+                    • Elemental Advantage:<div id="advantage"></div>
+                    <br>
+                    • Elemental Disadvantage:<div id="disadvantage"></div>
+                    <br>
+                </div>
+                <div id="statesPoke">
+                </div>
+                <div id="elemAdv"></div>
+                <div id="elemDis"></div>
+                <div id="evoButton">
+                    <input type="button" value="evolutions" onclick="showEvo()">
+                </div>
+                <div id="specialEvo" style="display: none;">
+                    <p>Special Evolutions:</p>
+                </div>
+                <div id="pokeGeneration"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>

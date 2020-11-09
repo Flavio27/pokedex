@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("./img/background.png");
+}
+.pokedex{
+    background-image: url("./img/pokedexinfo.png");
+    width: 387px;
+    height: 688px;
+}
+
+.pokedey--body{
+    font-size: small;
+    margin-top: 10px;
+    color: black;
+    border: black;
+    border-radius: 1cm;
+    box-shadow: black;
+    position: center;
+    text-align: left;
+    background-image: url("./img/screen.jpg");
+    width: 355px;
+    height: 480px;
+}
+.pokePic{
+    transform: scale(1.3);
+    transition: all ease 0.3s;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 100%;
+    height: 130x;
+    object-fit: cover;
+    width: 130px;
+    background-color: #fff;
+    margin-left: 100px;
+    
+    
+}
+.pokePic:hover{
+    transform: scale(1.5);
+}
+
+.background{
+    position: center;
+    width: 150px;
+    height: 150px;
+    border: 1cm;
+    border-radius: 10%;
+    display: block;
+    
+}
+
+#search{
+
+    margin-top: 140px;
+}
+
+#pokemonName{
+    font-size: medium;
+    padding-left: 10px;
+}
+
+#typePoke{
+    padding-left: 10px;
+}
+
+#alertSearch{
+    text-align: left;
+    color: rgb(219, 70, 70);
+    margin-left: 30px;
+    font-size: 10px;
+}
+
+#search{
+    padding-left: 60px;
+}
+
+#nomePoke{
+    font-size: smaller;
+    width: 200px;
+}
+
+#info{
+    font-size: 80%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#moreInfo{
+    position: fixed;
+    padding-top: 440px;
+}
+
+#back, #next{
+    border-radius: 3px;
+}
+#back{
+    margin-left: 20px;
+}
+
+#next{
+    margin-left: 300px;
+}
+
+
+.typePokemon{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -60px;
+    border-radius: 3px;
+
+}
+
+.typePokemonNormal{
+    color: rgb(0, 0, 0);
+    font-size: normal;
+
+}
+.typePokemonLegendary{
+    color: rgb(0, 0, 0);
+    background-color: rgba(250, 233, 0, 0.377);
+    font-size: xx-small;
+}
+
+
+
+#star{
+    width: 15px;
+    height: 15px;
+}
+
+
+#textPoke{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+}
+
+.smallerText{
+    font-size: xx-small;
+}
+
+.modal-backdrop {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.096);
+  }
+
+
+ .modal-body{
+     width: 800px;
+     height: 1000px;
+
+ }
+
+ .pokeSpaceLeft{
+    margin-right: 10px;
+ }
+
+ .PokeNameEvo{
+     background-color: rgba(146, 146, 146, 0.493);
+     text-align: center;
+     width: 100px
+ }
+
+ .arrow{
+margin-top: 10px;
+margin-left: 40px;
+ }
+
+ #loading{
+
+
+ }
+
+
+ .teste1, .teste2{
+     font-size: 10px;
+
+ }
+ 
+ .arrowNew{
+     font-size: large;
+     margin-top: 10px;
+     margin-left: 40px;
+ }
+
+ .center{
+     text-align: center;
+     position: center;
+ }
+
+ .or{
+    margin-top: 100px;
+ }
+
+ #statesPoke{
+     margin-left: 10px;
+ }
+ .statsColor{
+     height: 20px;
+     width: 200px;
+     border-radius: 10px;
+ }
+
+ .statsColor2{
+    height: 18px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+ .statsColor{
+    border: solid 1px black;
+}
+.numberStat{
+    margin-left: 40%;
+    font-size: xx-small;
+}
+.statName{
+    width: max-content;
+    text-align: center;
+   
+}
+.statNamdasdsade{
+    width: max-content;
+    text-align: center;
+    color:rgba(253, 71, 71, 0.603);
+   
+}
+
+#evoButton{
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.generation{
+    font-size: 9px;
+    padding-left: 20px;
+}
+
+.pokeNumber{
+    font-size: 9px;
+    padding-left: 20px;
+}
+
+.backgroundModal{
+    background-image: url("./img/background2.png");
+}
+#closeModal{
+    margin-left: 95%;
+}
+
+.elemental{
+    font-size: x-small;
+    padding-left: 9px;
+}
